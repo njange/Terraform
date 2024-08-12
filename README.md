@@ -50,8 +50,8 @@ The project outputs several important details about the VPC, including:
 
 ## Clone the Repository
   ``bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/njange/Terraform.git
+   cd Terraform
 
 ## Initialize Terraform
 bash
