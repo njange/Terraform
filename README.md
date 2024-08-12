@@ -11,25 +11,26 @@ An active account with [AWS]
 
 
 ## Project Structure
-The project is organized into multiple .tf files, each responsible for a specific aspect of the VPC:
+The project is organized into multiple `.tf` files, each responsible for a specific aspect of the VPC:
 
-provider.tf: This file defines the cloud provider (AWS) and the necessary credentials. It ensures that Terraform knows where to deploy the infrastructure.
+- **`provider.tf`**: This file defines the cloud provider (AWS, Azure, GCP) and the necessary credentials. It ensures that Terraform knows where to deploy the infrastructure.
 
-regionVariable.tf: Contains the variables related to the region where the VPC will be created. It allows you to specify and change the region easily.
+- **`regionVariable.tf`**: Contains the variables related to the region where the VPC will be created. It allows you to specify and change the region easily.
 
-vpc.tf: This file contains the main configuration for creating the VPC, including the CIDR block and DNS settings.
+- **`vpc.tf`**: This file contains the main configuration for creating the VPC, including the CIDR block and DNS settings.
 
-vpc_variable.tf: Defines variables related to the VPC, such as the CIDR block and whether DNS support is enabled.
+- **`vpc_variable.tf`**: Defines variables related to the VPC, such as the CIDR block and whether DNS support is enabled.
 
-subnets.tf: Manages the creation of public and private subnets within the VPC. It allows for the division of the VPC into multiple subnets for different purposes.
+- **`subnets.tf`**: Manages the creation of public and private subnets within the VPC. It allows for the division of the VPC into multiple subnets for different purposes.
 
-route_table.tf: Configures the route tables for the VPC, defining how traffic is routed between subnets and to external networks.
+- **`route_table.tf`**: Configures the route tables for the VPC, defining how traffic is routed between subnets and to external networks.
 
-gateways.tf: Sets up internet gateways or NAT gateways for the VPC, allowing instances in public subnets to communicate with the internet.
+- **`gateways.tf`**: Sets up internet gateways or NAT gateways for the VPC, allowing instances in public subnets to communicate with the internet.
 
-nacls.tf: Configures Network ACLs (Access Control Lists) to provide an additional layer of security by controlling inbound and outbound traffic at the subnet level.
+- **`nacls.tf`**: Configures Network ACLs (Access Control Lists) to provide an additional layer of security by controlling inbound and outbound traffic at the subnet level.
 
-terraform.tfstate & terraform.tfstate.backup: These files track the state of the deployed infrastructure, ensuring that Terraform can manage updates and changes over time.
+- **`terraform.tfstate`** & **`terraform.tfstate.backup`**: These files track the state of the deployed infrastructure, ensuring that Terraform can manage updates and changes over time.
+
 
 ## Configuration
 ## Input Variables
@@ -45,6 +46,10 @@ vpc_id: The ID of the created VPC.
 public_subnet_ids: List of IDs of the created public subnets.
 private_subnet_ids: List of IDs of the created private subnets.
 route_table_id: The ID of the main route table associated with the VPC.
+
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+
 ![init](https://github.com/user-attachments/assets/963ea353-baea-4deb-b3c5-5cadb313c69c)
 ![plan1](https://github.com/user-attachments/assets/507bbfde-1b94-4537-8393-8aadb00cb213)
 ![plan2](https://github.com/user-attachments/assets/d8f34491-3a86-4c9e-878b-0faf04f28638)
