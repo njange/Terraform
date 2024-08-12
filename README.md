@@ -52,7 +52,9 @@ The project outputs several important details about the VPC, including:
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
 
-  
+## Initialize Terraform
+
+Run the following command to initialize the Terraform working directory:
   ```bash
   terraform init
 
