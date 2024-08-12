@@ -54,7 +54,7 @@ The project outputs several important details about the VPC, including:
    cd your-repo
 
 ## Initialize Terraform
-```bash
+bash
 terraform init
 
 
