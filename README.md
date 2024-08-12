@@ -48,8 +48,9 @@ The project outputs several important details about the VPC, including:
 - **`private_subnet_ids`**: List of IDs of the created private subnets.
 - **`route_table_id`**: The ID of the main route table associated with the VPC.
 
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+  ```bash
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
 
 ![init](https://github.com/user-attachments/assets/963ea353-baea-4deb-b3c5-5cadb313c69c)
 ![plan1](https://github.com/user-attachments/assets/507bbfde-1b94-4537-8393-8aadb00cb213)
