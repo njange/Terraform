@@ -52,6 +52,10 @@ The project outputs several important details about the VPC, including:
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
 
+  
+  ```bash
+  terraform init
+
 ![init](https://github.com/user-attachments/assets/963ea353-baea-4deb-b3c5-5cadb313c69c)
 ![plan1](https://github.com/user-attachments/assets/507bbfde-1b94-4537-8393-8aadb00cb213)
 ![plan2](https://github.com/user-attachments/assets/d8f34491-3a86-4c9e-878b-0faf04f28638)
