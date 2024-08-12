@@ -48,11 +48,15 @@ The project outputs several important details about the VPC, including:
 - **`private_subnet_ids`**: List of IDs of the created private subnets.
 - **`route_table_id`**: The ID of the main route table associated with the VPC.
 
+## Clone the Repository
   ```bash
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
 
 ## Initialize Terraform
+```bash
+terraform init
+
 
 Run the following command to initialize the Terraform working directory:
 
