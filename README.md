@@ -49,7 +49,7 @@ The project outputs several important details about the VPC, including:
 - **`route_table_id`**: The ID of the main route table associated with the VPC.
 
 ## Clone the Repository
-  ```bash
+  ``bash
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
 
@@ -161,18 +161,20 @@ The project outputs several important details about the VPC, including:
 
 ## Usage
 
-1. **Clone the Repository**
+## Getting Started
 
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+**1. Clone the Repository**
+
+```bash
+git clone [https://github.com/yourusername/your-repo.git](https://github.com/yourusername/your-repo.git)
+cd your-repo
 Initialize Terraform
 
 Run the following command to initialize the Terraform working directory:
 
-bash
-Copy code
+Bash
 terraform init
+Use code with caution.
 
 Customize Variables
 
@@ -180,26 +182,27 @@ Modify the terraform.tfvars file or pass variables directly through the command 
 
 Example of terraform.tfvars:
 
-hcl
-Copy code
-vpc_name        = "production-vpc"
-cidr_block      = "10.0.0.0/16"
-region          = "us-east-1"
+Terraform
+vpc_name       = "production-vpc"
+cidr_block     = "10.0.0.0/16"
+region         = "us-east-1"
+Use code with caution.
+
 Plan the Configuration
 
 Run the following command to preview the changes that Terraform will make:
 
-bash
-Copy code
+Bash
 terraform plan
+Use code with caution.
 
 Apply the Configuration
 
 Apply the Terraform configuration to create the VPC:
 
-bash
-Copy code
+Bash
 terraform apply
+Use code with caution.
 
 Review the proposed changes and type yes to confirm.
 
@@ -207,9 +210,9 @@ Destroy the Resources (Optional)
 
 If you want to tear down the created infrastructure, run:
 
-bash
-Copy code
+Bash
 terraform destroy
+Use code with caution.
 
 This will remove all the resources that were created.
 
@@ -223,3 +226,4 @@ route_table.tf: Route tables configuration.
 gateways.tf: Internet and NAT gateways configuration.
 nacls.tf: Network ACLs configuration.
 terraform.tfstate & terraform.tfstate.backup: Terraform state files.
+These changes improve readability and consistency within the README.
