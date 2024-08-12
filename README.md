@@ -36,10 +36,11 @@ The project is organized into multiple `.tf` files, each responsible for a speci
 ## Input Variables
 The configuration allows customization through various input variables defined in the vpc_variable.tf and regionVariable.tf files:
 
-vpc_name: (Optional) The name to assign to the VPC. Default is my-vpc.
-cidr_block: (Required) The CIDR block for the VPC. Example: 10.0.0.0/16.
-region: (Optional) The region where the VPC should be created. Default is us-west-2.
-Outputs
+ **`vpc_name`**: *(Optional)* The name to assign to the VPC. Default is `my-vpc`.
+- **`cidr_block`**: *(Required)* The CIDR block for the VPC. Example: `10.0.0.0/16`.
+- **`region`**: *(Optional)* The region where the VPC should be created. Default is `us-west-2`.
+  
+## Outputs
 The project outputs several important details about the VPC, including:
 
 vpc_id: The ID of the created VPC.
