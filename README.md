@@ -55,10 +55,12 @@ The project outputs several important details about the VPC, including:
 ## Initialize Terraform
 
 Run the following command to initialize the Terraform working directory:
-  ```bash
-  terraform init
 
 ![init](https://github.com/user-attachments/assets/963ea353-baea-4deb-b3c5-5cadb313c69c)
+
+## Customize Variables
+
+Modify the terraform.tfvars file or pass variables directly through the command line to customize the configuration.
 ![plan1](https://github.com/user-attachments/assets/507bbfde-1b94-4537-8393-8aadb00cb213)
 ![plan2](https://github.com/user-attachments/assets/d8f34491-3a86-4c9e-878b-0faf04f28638)
 ![apply1](https://github.com/user-attachments/assets/c209bc8a-51dd-4cdc-abbc-c5a8a29a0ea6)
