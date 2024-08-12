@@ -30,6 +30,21 @@ gateways.tf: Sets up internet gateways or NAT gateways for the VPC, allowing ins
 nacls.tf: Configures Network ACLs (Access Control Lists) to provide an additional layer of security by controlling inbound and outbound traffic at the subnet level.
 
 terraform.tfstate & terraform.tfstate.backup: These files track the state of the deployed infrastructure, ensuring that Terraform can manage updates and changes over time.
+
+## Configuration
+## Input Variables
+The configuration allows customization through various input variables defined in the vpc_variable.tf and regionVariable.tf files:
+
+vpc_name: (Optional) The name to assign to the VPC. Default is my-vpc.
+cidr_block: (Required) The CIDR block for the VPC. Example: 10.0.0.0/16.
+region: (Optional) The region where the VPC should be created. Default is us-west-2.
+Outputs
+The project outputs several important details about the VPC, including:
+
+vpc_id: The ID of the created VPC.
+public_subnet_ids: List of IDs of the created public subnets.
+private_subnet_ids: List of IDs of the created private subnets.
+route_table_id: The ID of the main route table associated with the VPC.
 ![init](https://github.com/user-attachments/assets/963ea353-baea-4deb-b3c5-5cadb313c69c)
 ![plan1](https://github.com/user-attachments/assets/507bbfde-1b94-4537-8393-8aadb00cb213)
 ![plan2](https://github.com/user-attachments/assets/d8f34491-3a86-4c9e-878b-0faf04f28638)
